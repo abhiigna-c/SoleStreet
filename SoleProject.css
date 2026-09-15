@@ -60,6 +60,7 @@ nav{
   display: flex;
   padding: 10px 10px;
   position: relative;
+  height: 4rem;
 }
 
 .nav-heading::after{
@@ -126,9 +127,8 @@ nav{
     color: #51341e;
 }
 .mega-menu-column li a:hover {
-    color: #51341e;
-    text-decoration: underline;
-   
+    color: #321c0b;
+    font-weight: 600;
 }
 .search-container{
   display: flex;
