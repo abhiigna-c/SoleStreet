@@ -266,3 +266,51 @@ nav {
     font-size: 1rem;
     margin-top: 2px;
 }
+.auth-overlay{
+  z-index: 2;
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  max-width: 400px;
+  background-color: rgba(99, 61, 32, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  display: none;
+}
+.auth-form input, .auth-form select, .auth-form textarea{
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #8B6F5A;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+.auth-form input{
+  outline: none;
+}
+.auth-form h2{
+  color: #8B6F5A;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.auth-form button{
+  background-color:#51341e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.auth-form p{
+  margin: 10px;
+}
+.auth-form a{
+  color: #fff;
+}
