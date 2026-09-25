@@ -10,19 +10,17 @@
 </head>
 <body>
   <header class="header">
-    <div class="name" href="#">
-    </div>
     <div class="header-btn">
-      <a href="#" class="btn">Sign Up</a>
-      <a href="#" class="btn">Login</a>
+      <a href="#" class="btn" id="signup">Sign Up</a>
+      <a href="#" class="btn" id="login">Login</a>
       <a href="#" class="btn">Help</a>
     </div>
   </header>
   <nav>
-    <div class="Logo">
-        <a class="logo">
-            <img src="img/Logo.png" alt="SoleStreet Logo">
-        </a>
+    <div class="name" href="#">
+      <a class="logo">
+        <img src="img/Logo.png" alt="SoleStreet Logo">
+      </a>
     </div>
     <div class="nav-bar">
       <div class="mega-menu">
@@ -171,12 +169,182 @@
         </div>
     </div>
   </nav>
-    <section class="Home">
-        <div class="Home-text">
-            <h1>MORE THAN <br> JUST <span>SHOES</span></h1>
-            <h2>STEP INTO YOUR STYLE</h2>
+  <section class="home">
+    <div class="home-text">
+        <h1>MORE THAN <br>JUST <span>SHOES</span></h1>
+        <h2>STEP INTO YOUR STYLE</h2>
         <p>Discover shoes that match your style, comfort, and personality - all in one place.</p>
+        <a href="#" class="shop-btn">SHOP NOW</a>
+        <div class="icons">
+            <div class="box">
+                <i class="bx bx-package"></i>
+                <div class="icons-txt">
+                    <h2>Easy</h2>
+                    <p>Returns</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="bx bx-lock"></i>
+                <div class="icons-txt">
+                    <h2>Secure</h2>
+                    <p>Payments</p>
+                </div>
+            </div>
+             <div class="box">
+                <i class="bx bx-box"></i>
+                <div class="icons-txt">
+                    <h2>Fast</h2>
+                    <p>Delivery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="auth-overlay" id="loginPopup">
+        <div class="auth-form">
+            <button class="close-btn" id="closeLogin">&times;</button>
+            <h2>Welcome Back</h2>
+            <form>
+              <input type="email" placeholder="Your Email" required>
+              <input type="password" placeholder="Your Password" required>
+              <button type="submit" class="auth-submit">Login</button>
+            </form>
+            <p>
+                Don't have an account?
+                <a href="#" id="openSignup">Sign Up</a>
+            </p>
+        </div>
+    </div>
+    <div class="auth-overlay" id="signupPopup">
+        <div class="auth-form">
+            <button class="close-btn" id="closeSignup">&times;</button>
+            <h2>Create Account</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="password" placeholder="Create Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="auth-submit">Sign Up</button>
+            </form>
+            <p>
+                Already have an account?
+                <a href="#" id="openLogin">Login</a>
+            </p>
+        </div>
     </div>
   </section>
+  <section class="categories">
+    <div class="category">
+        <img src="img/feature1.png" alt="Sneakers">
+        <p>Sneakers</p>
+    </div>
+    <div class="category">
+        <img src="img/feature2.png" alt="Casuals">
+        <p>Casuals</p>
+    </div>
+    <div class="category">
+        <img src="img/feature3.png" alt="Runinng">
+        <p>Running</p>
+    </div>
+    <div class="category">
+        <img src="img/feature4.png" alt="Boots">
+        <p>Boots</p>
+    </div>
+    <div class="category">
+        <img src="img/feature5.png" alt="Sandals">
+        <p>Sandals</p>
+    </div>
+    <div class="category">
+        <img src="img/feature6.png" alt="Sports">
+        <p>Sports</p>
+    </div>
+  </section>
+  <section class="featured">
+    <div class="featured-header">
+        <h2>Featured Picks</h2>
+        <a href="#" class="view-all">
+            View All <span>→</span>
+        </a>
+    </div>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <i class="bx bx-heart heart"></i>
+                <img src="img/product1.png" alt="Nike Air Force 1 '07">
+            </div>
+
+            <div class="product-info">
+                <h3>Nike Air Force 1 '07</h3>
+                <p>Men's Sneakers</p>
+                <h4>₹ 8,995</h4>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <i class="bx bx-heart heart"></i>
+                <img src="img/product3.png" alt="Adidas Campus 00s">
+            </div>
+
+            <div class="product-info">
+                <h3>Adidas Campus 00s</h3>
+                <p>Men's Sneakers</p>
+                <h4>₹ 8,499</h4>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <i class="bx bx-heart heart"></i>
+                <img src="img/product2.png" alt="New Balance 574">
+            </div>
+
+            <div class="product-info">
+                <h3>New Balance 574</h3>
+                <p>Unisex Sneakers</p>
+                <h4>₹ 9,499</h4>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <i class="bx bx-heart heart"></i>
+                <img src="img/product4.png" alt="Converse Chuck Taylor">
+            </div>
+
+            <div class="product-info">
+                <h3>Converse Chuck Taylor</h3>
+                <p>Unisex High Tops</p>
+                <h4>₹ 6,499</h4>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="promo">
+    <div class="promo-image">
+        <img src="img/promo.png" alt="Shoe collection">
+    </div>
+    <div class="promo-content">
+        <p class="promo-small">STEP INTO SOMETHING BETTER</p>
+        <h2>
+            FOR EVERY<br>
+            <span>STEP FORWARD.</span>
+        </h2>
+
+        <p class="promo-text">
+            Discover footwear designed to keep you moving,
+            comfortable, confident, and ready for whatever
+            comes next.
+        </p>
+        <a href="#" class="promo-btn">
+            EXPLORE COLLECTION
+        </a>
+    </div>
+  </section>
+  <section class="newsletter">
+    
+  </section>
+  <script src="SoleProject.js"></script>
 </body>
 </html>
