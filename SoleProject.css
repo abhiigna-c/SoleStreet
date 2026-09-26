@@ -466,7 +466,7 @@ nav {
     background-position: center;
     position: relative;
     overflow: hidden;
-    background-color: #5b4432;
+    background-color: #f1efec;
 }
 .promo-image {
     width: 55%;
@@ -485,7 +485,7 @@ nav {
     z-index: 1;
     width: 50%;
     margin-left: 8%;
-    color: white;
+    color: black;
 }
 .promo-small {
     font-family: Arial, sans-serif;
@@ -500,7 +500,7 @@ nav {
     margin-bottom: 18px;
 }
 .promo-content h2 span {
-    color: #e5d4c4;
+    color: #51341e;
 }
 .promo-text {
     max-width: 420px;
@@ -512,8 +512,8 @@ nav {
 .promo-btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #ffffff;
-    color: #51341e;
+    background-color: #51341e;
+    color: #fff;
     font-family: Arial, sans-serif;
     font-size: 11px;
     font-weight: 600;
@@ -524,4 +524,78 @@ nav {
 .promo-btn:hover {
     background-color: #51341e;
     color: white;
+}
+.newsletter {
+    background: linear-gradient(to right, #1a0f0f, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.newsletter h2 {
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.newsletter p {
+    margin: 0 0 18px;
+    font-size: smaller;
+}
+
+.newsletter .box {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 42px;
+    padding: 4px 6px 4px 12px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.box input::placeholder {
+    color: #888;
+}
+
+.box .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8B6F5A;
+    color: white;
+    width: 50px;
+    height: 42px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.box .btn:hover {
+    background-color: #6f5543;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+.copy-writes{
+    font-weight: 600;
+    font-size: 23px;
 }
