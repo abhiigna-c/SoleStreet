@@ -60,3 +60,11 @@ openLogin.addEventListener("click", function(event) {
   signupPopup.style.display = "none";
   loginPopup.style.display = "flex";
 });
+
+const hearts = document.querySelectorAll(".heart");
+hearts.forEach(function(heart){
+  heart.addEventListener("click",function() {
+    this.classList.toggle("bxs-heart");
+    this.classList.toggle("bx-heart");
+  });
+});
